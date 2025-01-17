@@ -2,7 +2,16 @@
   "name": "@nx-boilerplate/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "ng": "nx",
+    "postinstall": "node ./decorate-angular-cli.js",
+    "start": "nx serve --project=nx-boilerplate --verbose",
+    "build": "nx build --project=nx-boilerplate",
+    "test": "npx nx test nx-boilerplate --code-coverage --detectOpenHandles --forceExit",
+    "format:fix": "npx nx format:write",
+    "e2e": "nx run nx-boilerplate:e2e --watch",
+    "graph": "nx graph"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~19.0.0",
