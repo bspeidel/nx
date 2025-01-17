@@ -1,0 +1,33 @@
+<mat-toolbar
+  class="mat-toolbar mat-toolbar-single-row first-toolbar flex-row justify-between"
+>
+  <a routerLink="/dashboard" data-cy="logo"
+    ><img
+      class="admin-logo"
+      src="assets/img/logos/smartinsurtech_neg.svg"
+      alt="Logo"
+  /></a>
+
+  <div>
+    <button
+      mat-mini-fab
+      aria-label="menu"
+      tabindex="-1"
+      [matMenuTriggerFor]="menu"
+      data-cy="profile"
+    >
+      @if(userInitials) {{{ userInitials }}} @else {
+      <mat-icon fontSet="fas" fontIcon="fa-user-tie"></mat-icon>
+      }
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item data-cy="logout" >
+        <mat-icon
+          fontSet="fas"
+          fontIcon="fa-arrow-up-left-from-circle"
+        ></mat-icon>
+        Abmelden
+      </button>
+    </mat-menu>
+  </div>
+</mat-toolbar>

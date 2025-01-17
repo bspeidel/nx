@@ -1,0 +1,39 @@
+<insurBase-header></insurBase-header>
+<mat-drawer-container hasBackdrop="false">
+  <mat-drawer
+    #sidenav
+    class="nav-drawer"
+    fixedTopGap="56"
+    mode="over"
+    opened="false"
+    position="start"
+  >
+    <button
+      mat-icon-button
+      (click)="sidenav.close()"
+      class="button-close"
+      data-cy="sidenav-button-close"
+    ></button>
+    <sidenav> </sidenav>
+  </mat-drawer>
+  <mat-toolbar class="second-toolbar">
+    <button
+      mat-icon-button
+      (click)="sidenav.toggle()"
+      data-cy="sidenav-button"
+      class="sidenav-button"
+    >
+      <mat-icon
+        class="theme-color-primary"
+        fontSet="fas"
+        fontIcon="fa-sidebar"
+      ></mat-icon>
+    </button>
+    <div class="center theme-color-primary" data-cy="title">Dashboard</div>
+  </mat-toolbar>
+  <main>
+    <mat-card>
+      <p>Hallo world!</p>
+    </mat-card>
+  </main>
+</mat-drawer-container>
