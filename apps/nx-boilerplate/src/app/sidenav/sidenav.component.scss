@@ -1,0 +1,36 @@
+@use '../../variables' as *;
+
+.mat-list {
+  padding-top: 0;
+}
+
+.sidenav-header {
+  height: 170px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.mat-mdc-list-item {
+  width: unset !important;
+  margin: 0 8px;
+  border-radius: 12px;
+  color: $primary;
+
+  .mat-icon {
+    margin-top: 8px;
+    color: $primary;
+  }
+}
+
+.mat-mdc-list-item:hover {
+  background-color: $background;
+  color: $primary-light;
+  cursor: pointer;
+}
+
+.mat-mdc-list-item.active {
+  border: 2px solid $primary;
+  color: $primary;
+}

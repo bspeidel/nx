@@ -23,6 +23,7 @@
     "@angular/platform-browser": "~19.0.0",
     "@angular/platform-browser-dynamic": "~19.0.0",
     "@angular/router": "~19.0.0",
+    "@fortawesome/fontawesome-pro": "^6.7.2",
     "@smitag/angular-shared-ui": "^18.1.19",
     "ngx-skeleton-loader": "^9.0.0",
     "rxjs": "~7.8.0",

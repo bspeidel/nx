@@ -1,6 +1,10 @@
 {
   "extends": "./tsconfig.json",
-  "include": ["src/**/*.ts", "../../shared-ui/src/lib/config/paginator-intl.ts", "../../shared-ui/src/lib/angular-material.module.ts"],
+  "include": [
+    "src/**/*.ts",
+    "../../libs/shared-ui/src/lib/config/paginator-intl.ts",
+    "../../libs/shared-ui/src/lib/angular-material.module.ts"
+  ],
   "compilerOptions": {},
   "exclude": ["jest.config.ts", "src/**/*.test.ts", "src/**/*.spec.ts"]
 }

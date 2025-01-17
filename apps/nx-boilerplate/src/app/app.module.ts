@@ -14,12 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import {
-  AngularMaterialModule,
-} from '../../../../shared-ui/src/lib/angular-material.module';
-import {
-  getGermanPaginatorIntl,
-} from '../../../../shared-ui/src/lib/config/paginator-intl';
+import { AngularMaterialModule, getGermanPaginatorIntl } from '@shared-ui';
 import { MatPaginatorIntl } from '@angular/material/paginator';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { MAT_DIALOG_DEFAULT_OPTIONS } from '@angular/material/dialog';
@@ -31,7 +26,7 @@ registerLocaleData(localeDe, 'de-DE', localeDeExtra);
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    SidenavComponent
+    SidenavComponent,
   ],
   exports: [HeaderComponent, SidenavComponent],
   imports: [
@@ -53,7 +48,7 @@ registerLocaleData(localeDe, 'de-DE', localeDeExtra);
     {
       provide: MAT_DIALOG_DEFAULT_OPTIONS,
       useValue: { maxWidth: '860px', width: '860px' },
-    }
+    },
   ],
   bootstrap: [AppComponent],
 })

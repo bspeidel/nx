@@ -1,2 +1,151 @@
+@use 'variables' as *;
+
 @use '@smitag/angular-shared-ui/src/lib/styles/styles';
 @use '@smitag/angular-shared-ui/src/lib/styles/themes/admin';
+@use '@fortawesome/fontawesome-pro/scss/fontawesome';
+@use '@fortawesome/fontawesome-pro/scss/regular';
+@use '@fortawesome/fontawesome-pro/scss/solid';
+
+.nav-drawer {
+  box-shadow: none;
+  border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+  border-radius: 0 !important;
+  width: 255px !important;
+}
+
+.mat-drawer-container {
+  height: calc(100vh - 64px) !important;
+  background-color: #f2f2f6 !important;
+}
+
+.mdc-button + .mdc-button {
+  margin-left: 8px;
+}
+
+.mat-mdc-paginator-container {
+  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
+    0 1px 3px 0 rgba(60, 64, 67, 0.16);
+}
+
+.mat-mdc-table {
+  width: 100%;
+  border-radius: 4px;
+  .mat-checkbox {
+    vertical-align: text-bottom;
+    margin-right: 8px;
+  }
+  .mat-cell {
+    font-size: 14px;
+  }
+
+  .mat-mdc-header-cell,
+  .mat-mdc-cell {
+    border-bottom-color: #c7c5d0;
+  }
+}
+
+.mat-divider {
+  border-top-color: #c7c5d0 !important;
+}
+
+.card-action {
+  margin-bottom: 8px;
+
+  .button-container {
+    text-align: right;
+  }
+
+  .mat-button {
+    margin-left: 8px;
+  }
+
+  .transfer-form {
+    margin-top: 8px;
+    height: 64px;
+  }
+}
+
+.search-drawer {
+  width: 380px !important;
+
+  .button-container {
+    text-align: right;
+  }
+
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    opacity: 0.5;
+  }
+}
+
+.button-close {
+  position: absolute !important;
+  right: 0 !important;
+}
+
+.slider-container {
+  margin-bottom: 32px;
+}
+
+.prio_1 {
+  color: #9e1313;
+}
+
+.prio_2 {
+  color: #e60000;
+}
+
+.prio_3 {
+  color: #f07d02;
+}
+
+.prio_4 {
+  color: #6caa31;
+}
+
+.prio_5 {
+  color: #444;
+}
+
+.info-icon {
+  color: #50abc2;
+}
+
+.mat-mdc-form-field-icon-prefix {
+  margin-left: 8px;
+  color: #c7c5d0 !important;
+}
+
+.theme-color-warn {
+  color: $warn !important;
+}
+
+.theme-color-success {
+  color: $success !important;
+}
+
+// lg-size
+@media (max-width: 1279px) {
+  .mat-table {
+    .mat-checkbox {
+      margin-right: 8px;
+    }
+
+    .mat-cell {
+      font-size: 12px;
+    }
+  }
+
+  .mat-form-field {
+    margin-bottom: 0 !important;
+  }
+}
+
+// xs-size
+@media (max-width: 600px) {
+  .search-drawer {
+    width: 100% !important;
+  }
+}
